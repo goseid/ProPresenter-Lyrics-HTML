@@ -1,0 +1,195 @@
+[
+	{
+		"acn": "ath",
+		"ath": true,
+		"majorVersion": 7,
+		"minorVersion": 0,
+		"err": ""
+	},
+	{
+		"acn": "saa",
+		"asgns": [
+			{
+				"scnnme": "Stage Screen 1",
+				"scnuid": "A71DCDDA-93E0-4FB3-AAE2-F30C610768C8",
+				"lytnme": "NORMAL",
+				"lytuid": "97F44A7F-C0B0-4438-99CE-7264D8691DB0"
+			}
+		]
+	},
+	{
+		"acn": "fv",
+		"ary": [
+			{
+				"acn": "cs",
+				"uid": "34934434-9DF6-4513-8514-B1CBB3BD7A64",
+				"txt": "\n\nAscribe to the Lord the glory due his name;\n\nworship the Lord in the splendor of holiness.\n\nPsalm 29:2"
+			},
+			{
+				"acn": "csn",
+				"uid": "00000000-0000-0000-0000-000000000000",
+				"txt": ""
+			},
+			{
+				"acn": "ns",
+				"uid": "D1F86B94-ECCF-466D-BC1A-B4F0975287F8",
+				"txt": "Come now is the time to worship\rCome just as you are to worship\rCome\rCome now is the time to give your heart\rCome just as you are before your God"
+			},
+			{
+				"acn": "nsn",
+				"uid": "00000000-0000-0000-0000-000000000000",
+				"txt": ""
+			}
+		]
+	},
+	{
+		"acn": "fv",
+		"ary": [
+			{
+				"acn": "cs",
+				"uid": "D1F86B94-ECCF-466D-BC1A-B4F0975287F8",
+				"txt": "Come now is the time to worship\rCome just as you are to worship\rCome\rCome now is the time to give your heart\rCome just as you are before your God"
+			},
+			{
+				"acn": "csn",
+				"uid": "00000000-0000-0000-0000-000000000000",
+				"txt": ""
+			},
+			{
+				"acn": "ns",
+				"uid": "D67F165F-365E-470E-934C-01283E5FB38C",
+				"txt": "Still the greatest treasure remains\nFor those who gladly choose You now\rOne day every tongue\nWill confess You are God\rOne day every knee will bow"
+			},
+			{
+				"acn": "nsn",
+				"uid": "00000000-0000-0000-0000-000000000000",
+				"txt": ""
+			}
+		]
+	},
+	{
+		"acn": "fv",
+		"ary": [
+			{
+				"acn": "cs",
+				"uid": "D67F165F-365E-470E-934C-01283E5FB38C",
+				"txt": "Still the greatest treasure remains\nFor those who gladly choose You now\rOne day every tongue\nWill confess You are God\rOne day every knee will bow"
+			},
+			{
+				"acn": "csn",
+				"uid": "00000000-0000-0000-0000-000000000000",
+				"txt": ""
+			},
+			{
+				"acn": "ns",
+				"uid": "D1F86B94-ECCF-466D-BC1A-B4F0975287F8",
+				"txt": "Come now is the time to worship\rCome just as you are to worship\rCome\rCome now is the time to give your heart\rCome just as you are before your God"
+			},
+			{
+				"acn": "nsn",
+				"uid": "00000000-0000-0000-0000-000000000000",
+				"txt": ""
+			}
+		]
+	},
+	{
+		"acn": "fv",
+		"ary": [
+			{
+				"acn": "cs",
+				"uid": "D1F86B94-ECCF-466D-BC1A-B4F0975287F8",
+				"txt": "Come now is the time to worship\rCome just as you are to worship\rCome\rCome now is the time to give your heart\rCome just as you are before your God"
+			},
+			{
+				"acn": "csn",
+				"uid": "00000000-0000-0000-0000-000000000000",
+				"txt": ""
+			},
+			{
+				"acn": "ns",
+				"uid": "D67F165F-365E-470E-934C-01283E5FB38C",
+				"txt": "Still the greatest treasure remains\nFor those who gladly choose You now\rOne day every tongue\nWill confess You are God\rOne day every knee will bow"
+			},
+			{
+				"acn": "nsn",
+				"uid": "00000000-0000-0000-0000-000000000000",
+				"txt": ""
+			}
+		]
+	},
+	{
+		"acn": "fv",
+		"ary": [
+			{
+				"acn": "cs",
+				"uid": "D67F165F-365E-470E-934C-01283E5FB38C",
+				"txt": "Still the greatest treasure remains\nFor those who gladly choose You now\rOne day every tongue\nWill confess You are God\rOne day every knee will bow"
+			},
+			{
+				"acn": "csn",
+				"uid": "00000000-0000-0000-0000-000000000000",
+				"txt": ""
+			},
+			{
+				"acn": "ns",
+				"uid": "D1F86B94-ECCF-466D-BC1A-B4F0975287F8",
+				"txt": "Come now is the time to worship\rCome just as you are to worship\rCome\rCome now is the time to give your heart\rCome just as you are before your God"
+			},
+			{
+				"acn": "nsn",
+				"uid": "00000000-0000-0000-0000-000000000000",
+				"txt": ""
+			}
+		]
+	},
+	{
+		"acn": "fv",
+		"ary": [
+			{
+				"acn": "cs",
+				"uid": "D1F86B94-ECCF-466D-BC1A-B4F0975287F8",
+				"txt": "Come now is the time to worship\rCome just as you are to worship\rCome\rCome now is the time to give your heart\rCome just as you are before your God"
+			},
+			{
+				"acn": "csn",
+				"uid": "00000000-0000-0000-0000-000000000000",
+				"txt": ""
+			},
+			{
+				"acn": "ns",
+				"uid": "62CBAECF-719B-4EBE-83CF-10E4359EAFC3",
+				"txt": ""
+			},
+			{
+				"acn": "nsn",
+				"uid": "00000000-0000-0000-0000-000000000000",
+				"txt": ""
+			}
+		]
+	},
+	{
+		"acn": "fv",
+		"ary": [
+			{
+				"acn": "cs",
+				"uid": "62CBAECF-719B-4EBE-83CF-10E4359EAFC3",
+				"txt": ""
+			},
+			{
+				"acn": "csn",
+				"uid": "00000000-0000-0000-0000-000000000000",
+				"txt": ""
+			},
+			{
+				"acn": "ns",
+				"uid": "00000000-0000-0000-0000-000000000000",
+				"txt": ""
+			},
+			{
+				"acn": "nsn",
+				"uid": "00000000-0000-0000-0000-000000000000",
+				"txt": ""
+			}
+		]
+	}
+]

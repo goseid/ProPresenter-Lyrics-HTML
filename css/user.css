@@ -1,1 +1,19 @@
 /* Place any user-generated stylesheets here */
+body {
+    background-color: rgba(0, 0, 255, 255);
+}
+
+.lyrics {
+    width: calc(100% - 4rem);
+    margin: 2rem;
+
+	font-size: 60px;
+    text-align: center;
+    color: white;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: 800;
+    text-shadow: 1px 1px 0px black;
+    align-self: flex-end;
+	
+	-webkit-text-stroke: 2px black; 
+}

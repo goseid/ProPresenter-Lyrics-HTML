@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/user.css" />
+    <style>
+        body {
+            background-color: #000;
+            color: #FFF;
+            font-size: 3rem;
+            font-family: sans-serif;
+            font-weight: bold;
+            padding: 1rem;
+        }
+
+        .container {
+            flex-direction: column;
+        }
+
+        .container>div {
+            margin-bottom: 2rem;
+        }
+
+        .container>div:last-child {
+            margin-top: auto;
+            padding-bottom: 2rem;
+            color: #ccc;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .clocks {
+            flex-direction: row;
+        }
+
+        .timer {
+            float: left;
+            width: 24%;
+            font-style: italic;
+            text-align: center;
+            color: yellow;
+            background-color: #110;
+            font-size: 2.5rem;
+            height:50px;
+            padding-top: 8px;
+        }
+
+        .clock {
+            float: left;
+            text-align: center;
+            width: 52%;
+            font-style: italic;
+            background-color: #200;
+            height:58px;
+        }
+
+        .video {
+            float: left;
+            width: 24%;
+            font-style: italic;
+            font-size: 2.5rem;
+            text-align: center;
+            color: #0f0;
+            background-color: #020;
+            height:50px;
+            padding-top: 8px;
+        }
+
+        .lyrics_next {
+            background-color: #070900;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .lyrics_current {
+            background-color: #010;
+            text-align: center;
+            font-size: 2.3rem;
+        }
+
+        .debug {
+            background-color: #222;
+            color: #0d0;
+            text-align: left;
+            font-family: "Lucida Console", monaco, Courier, "Courier New", monospace;
+            font-size: 14px;
+            font-weight: normal;
+            height: 0%;
+            overflow: auto;
+        }
+    </style>
+    <script type="text/javascript" src="config.js"></script>
+    <script type="text/javascript" src="js/core.js"></script>
+    <script>
+        lyric_currentBlocks = document.getElementsByClassName('lyrics_current');
+        lyric_nextBlocks = document.getElementsByClassName('lyrics_next');
+        clockBlocks = document.getElementsByClassName('clock');
+        timerBlocks = document.getElementsByClassName('timer');
+        videoBlocks = document.getElementsByClassName('video');
+
+        function callback_lyrics_current(lines) {
+            html = lyrics_text_html(lines);
+            lyric_currentBlocks[0].innerHTML = html;
+        }
+        function callback_lyrics_next(lines) {
+            html = lyrics_text_html(lines);
+            lyric_nextBlocks[0].innerHTML = html;
+        }
+        // function callback_clock(lines) {
+        //     var d = new Date(parseInt(lines) * 1000);
+        //     clockBlocks[0].innerHTML = d.toLocaleTimeString();
+        // }
+        function callback_clock(time, locale) {
+            if (isNaN(time)) {
+                clockBlocks[0].innerHTML = time;
+            } else {
+                const clockObj = new Date(time * 1000);
+                clockBlocks[0].innerHTML = clockObj.toLocaleTimeString(locale);
+            }
+        }
+
+        function callback_timer(lines) {
+            timerBlocks[0].innerHTML = lines;
+        }
+        function callback_video(lines) {
+            // let v = document.getElementById('video');
+            // v.innerHTML = lines;
+            videoBlocks[0].innerHTML = lines;
+        }
+        function callback_debug(lines) {
+            let debugBlock = document.getElementById('debug');
+            var p = document.createElement('pre');
+            p.innerHTML = lines;
+            debugBlock.appendChild(p);
+            debugBlock.scrollTop = debugBlock.scrollHeight;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="clocks">
+            <div class="timer">
+                88:88:88
+                <!-- Timer goes here -->
+            </div>
+            <div class="clock">
+                88:88:88 AM
+                <!-- Clock goes here -->
+            </div>
+            <div class="video">
+                88:88:88
+                <!-- Timer goes here -->
+            </div>
+        </div>
+        <div class="debug" id="debug">debug:</div>
+        <div class="lyrics_current">
+            Come now is the time to worship<br>
+            Come now is the time to give your heart<br>
+            Come just as you are to worship<br>
+            Come just as you are before your God<br>
+            Come<br>
+        </div>
+        <div class="lyrics_next">
+            One day every tongue<br>
+            Will confess You are God<br>
+            One day every knee will bow<br>
+            Still the greatest treasure remains<br>
+            For those who gladly choose You now<br>
+        </div>
+    </div>
+</body>
+
+</html>
