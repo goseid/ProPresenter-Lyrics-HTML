@@ -65,9 +65,9 @@ Connection.prototype.disconnect = function () {
 Connection.prototype.message = function (msg) {
     // Receive messages from ProPresenter
 
-    if (!(msg.acn == "sys" || msg.acn == "vid")) {
-        callback_debug(JSON.stringify(msg, null, "\t"));
-    }
+    // if (!(msg.acn == "sys" || msg.acn == "vid")) {
+    //     callback_debug(JSON.stringify(msg, null, "\t"));
+    // }
     if (msg.acn == "ath") {
         if (msg.ath == true) {
             console.log("Authentication succeeded");
