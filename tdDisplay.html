@@ -123,8 +123,8 @@
         lyric_currentBlocks = document.getElementsByClassName('lyrics_current');
         lyric_nextBlocks = document.getElementsByClassName('lyrics_next');
         clockBlocks = document.getElementsByClassName('clock');
-        timerBlocks = document.getElementsByClassName('timer');
-        videoBlocks = document.getElementsByClassName('video');
+        timerBlocks = document.getElementsByClassName('startTimer');
+        videoBlocks = document.getElementsByClassName('vidTimer');
 
         function callback_lyrics_current(lines) {
             html = lyrics_text_html(lines);
@@ -170,7 +170,7 @@
         <div class="clocks">
             <fieldset class="timer">
                 <legend>service begins in</legend>
-                88:88:88
+                <span class = "startTimer">88:88:88</span>
                 <!-- Timer goes here -->
             </fieldset>
             <fieldset class="clock">
@@ -179,7 +179,7 @@
             </fieldset>
             <fieldset class="video">
                 <legend>video time remaining</legend>
-                88:88:88
+                <span class="vidTimer">88:88:88</span>
                 <!-- Timer goes here -->
             </fieldset>
         </div>
