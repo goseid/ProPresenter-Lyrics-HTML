@@ -1,5 +1,5 @@
 var ProPresenter = [];
-var debug = true;
+var debug = false;
 document.addEventListener('DOMContentLoaded', function () {
     ProPresenter[0] = new Connection();
     ProPresenter[0].connect();
