@@ -34,45 +34,70 @@
 
         .clocks {
             flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 880px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        fieldset {
+            -moz-border-radius: 8px;
+            -webkit-border-radius: 8px;
+            border-radius: 8px;
+            padding: 5px;
+            display: block;
+        }
+
+        legend {
+            font-family: "Lucida Console", monaco, Courier, "Courier New", monospace;
+            font-size: 14px;
+            font-weight: normal;
         }
 
         .timer {
             float: left;
-            width: 24%;
+            width: 212px;
             font-style: italic;
             text-align: center;
+            border-color: yellow;
             color: yellow;
             background-color: #110;
             font-size: 2.5rem;
-            height:50px;
-            padding-top: 8px;
+            margin: 2px;
         }
 
         .clock {
             float: left;
             text-align: center;
-            width: 52%;
+            width: 386px;
             font-style: italic;
             background-color: #200;
-            height:58px;
+            height: 60px;
+            margin-left: 5px;
+            margin-right: 5px;
         }
 
         .video {
             float: left;
-            width: 24%;
+            width: 212px;
             font-style: italic;
             font-size: 2.5rem;
             text-align: center;
+            border-color: #0f0;
             color: #0f0;
             background-color: #020;
-            height:50px;
-            padding-top: 8px;
+            margin: 2px;
         }
 
         .lyrics_next {
-            background-color: #070900;
+            color: #81b0e5;
+            border-color: #81b0e5;
+            background-color: #0a0e12;
             text-align: center;
             font-size: 2rem;
+            margin-top: auto;
+            margin-bottom: 2rem;
         }
 
         .lyrics_current {
@@ -143,34 +168,38 @@
 <body>
     <div class="container">
         <div class="clocks">
-            <div class="timer">
+            <fieldset class="timer">
+                <legend>service begins in</legend>
                 88:88:88
                 <!-- Timer goes here -->
-            </div>
-            <div class="clock">
+            </fieldset>
+            <fieldset class="clock">
                 88:88:88 AM
                 <!-- Clock goes here -->
-            </div>
-            <div class="video">
+            </fieldset>
+            <fieldset class="video">
+                <legend>video time remaining</legend>
                 88:88:88
                 <!-- Timer goes here -->
-            </div>
+            </fieldset>
         </div>
         <div class="debug" id="debug">debug:</div>
-        <div class="lyrics_current">
+        <fieldset class="lyrics_current">
+            <legend>Current Text</legend>
             Come now is the time to worship<br>
             Come now is the time to give your heart<br>
             Come just as you are to worship<br>
             Come just as you are before your God<br>
             Come<br>
-        </div>
-        <div class="lyrics_next">
+        </fieldset>
+        <fieldset class="lyrics_next">
+            <legend>Up Next</legend>
             One day every tongue<br>
             Will confess You are God<br>
             One day every knee will bow<br>
             Still the greatest treasure remains<br>
             For those who gladly choose You now<br>
-        </div>
+        </fieldset>
     </div>
 </body>
 
