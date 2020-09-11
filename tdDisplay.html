@@ -8,7 +8,7 @@
         body {
             background-color: #000;
             color: #FFF;
-            font-size: 3rem;
+            font-size: 4.5vw;
             font-family: sans-serif;
             font-weight: bold;
             padding: 1rem;
@@ -16,10 +16,6 @@
 
         .container {
             flex-direction: column;
-        }
-
-        .container>div {
-            margin-bottom: 2rem;
         }
 
         .container>div:last-child {
@@ -33,88 +29,101 @@
         }
 
         .clocks {
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+
+            /* flex-direction: row;
             justify-content: center;
             align-items: center;
-            width: 880px;
+            width: 100vw;
             margin-left: auto;
-            margin-right: auto;
+            margin-right: auto; */
         }
 
         fieldset {
             -moz-border-radius: 8px;
             -webkit-border-radius: 8px;
             border-radius: 8px;
-            padding: 5px;
-            display: block;
+            padding-block-start: .5vw;
+            padding-block-end: 2vw;
+            /* padding: 5px;
+            display: block; */
+            vertical-align: baseline;
         }
 
         legend {
             font-family: "Lucida Console", monaco, Courier, "Courier New", monospace;
             font-size: 14px;
             font-weight: normal;
+            text-align: left;
+            text-overflow: clip;
+            overflow: hidden;
+            white-space: nowrap;
         }
 
         .timer {
-            float: left;
-            width: 212px;
+            /* float: left;
+            width: 1fr; */
             font-style: italic;
             text-align: center;
             border-color: yellow;
             color: yellow;
             background-color: #110;
-            font-size: 2.5rem;
-            margin: 2px;
+            font-size: .9em;
+            height: 4vw;
+            margin: auto 0 0 0;
+            /* margin-top: auto;
+            margin-bottom: 0px; */
+            /* margin: 2px; */
         }
 
         .clock {
-            float: left;
+            /* float: left; */
             text-align: center;
-            width: 386px;
+            width: 2fr;
             font-style: italic;
             background-color: #200;
-            height: 60px;
-            margin-left: 5px;
-            margin-right: 5px;
+            margin: auto 10px 0 10px;
+            /* margin-left: 5px;
+            margin-right: 5px; */
+            font-size: 1.2em;
+            height: 4vw;
+            overflow: hidden;
         }
 
         .video {
-            float: left;
-            width: 212px;
+            /* float: left; */
+            width: 1fr;
             font-style: italic;
-            font-size: 2.5rem;
+            font-size: .9em;
             text-align: center;
             border-color: #0f0;
             color: #0f0;
             background-color: #020;
-            margin: 2px;
+            height: 4vw;
+            margin: auto 0 0 0;
+            /* margin: 2px; */
         }
 
         .lyrics_next {
             color: #81b0e5;
             border-color: #81b0e5;
             background-color: #0a0e12;
+            margin-top: 10px;
             text-align: center;
-            font-size: 2rem;
-            margin-top: auto;
-            margin-bottom: 2rem;
+            font-size: .7em;
+            height: 35vh;
         }
 
         .lyrics_current {
+            margin-top: 20px;
             background-color: #010;
             text-align: center;
-            font-size: 2.3rem;
-        }
-
-        .debug {
-            background-color: #222;
-            color: #0d0;
-            text-align: left;
-            font-family: "Lucida Console", monaco, Courier, "Courier New", monospace;
-            font-size: 14px;
-            font-weight: normal;
-            height: 0%;
-            overflow: auto;
+            height: 40vh;
+            /* font-size: 2.3rem; */
         }
     </style>
     <script type="text/javascript" src="config.js"></script>
@@ -130,6 +139,7 @@
             html = lyrics_text_html(lines);
             lyric_currentBlocks[0].innerHTML = html;
         }
+
         function callback_lyrics_next(lines) {
             html = lyrics_text_html(lines);
             lyric_nextBlocks[0].innerHTML = html;
@@ -150,17 +160,11 @@
         function callback_timer(lines) {
             timerBlocks[0].innerHTML = lines;
         }
+
         function callback_video(lines) {
             // let v = document.getElementById('video');
             // v.innerHTML = lines;
             videoBlocks[0].innerHTML = lines;
-        }
-        function callback_debug(lines) {
-            let debugBlock = document.getElementById('debug');
-            var p = document.createElement('pre');
-            p.innerHTML = lines;
-            debugBlock.appendChild(p);
-            debugBlock.scrollTop = debugBlock.scrollHeight;
         }
     </script>
 </head>
@@ -170,7 +174,7 @@
         <div class="clocks">
             <fieldset class="timer">
                 <legend>service begins in</legend>
-                <span class = "startTimer">88:88:88</span>
+                <span class="startTimer">88:88:88</span>
                 <!-- Timer goes here -->
             </fieldset>
             <fieldset class="clock">
@@ -183,7 +187,6 @@
                 <!-- Timer goes here -->
             </fieldset>
         </div>
-        <div class="debug" id="debug">debug:</div>
         <fieldset class="lyrics_current">
             <legend>Current Text</legend>
             Come now is the time to worship<br>
